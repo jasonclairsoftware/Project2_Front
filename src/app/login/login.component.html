@@ -1,13 +1,37 @@
-
-<div *ngIf = "loginSuccessful == false">
-
-    Username<input type="text" [(ngModel)] = "usernm">
-    Password<input type="password" [(ngModel)] = "userpassword">
-    Is manager?(TRUE/FALSE)<input type="text" [(ngModel)] = "infoManager">
-
-    <button (click) = "submit()">Submit</button>
-
-
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container container-fluid">
+        <div class="row">
+            <div >
+                <h1 class="display-4">GEO EPIC</h1>
+                <p class="lead">Find Items,  Gain Revature Points</p>
+                <hr class="my-4">
+                <p>Exchange items</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+            <div class="col-sm-12">
+                <h1>GEO EPIC</h1>
+                <div *ngIf = "loginSuccessful == false">
+                    <div>
+                        Username<input type="text" [(ngModel)] = "usernm">
+                    </div>
+                    <div>
+                        Password<input type="password" [(ngModel)] = "userpassword">
+                    </div>
+                    <div>
+                        Is manager?(TRUE/FALSE)<input type="text" [(ngModel)] = "infoManager">
+                
+                    </div>
+                    
+                    <button (click) = "submit()">Submit</button>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 

@@ -1,0 +1,15 @@
+img{
+    height: 300px;
+    
+}
+
+.bgPic{
+    background-image: url("../images/map.png");
+}
+
+.table{
+    background-color: tan;
+}
+.jumbotron{
+    width: 100%;
+}

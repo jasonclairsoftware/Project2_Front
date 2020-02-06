@@ -1,7 +1,7 @@
 
 
 <div *ngIf = "showLocationMenu">
-    <table>
+    <table class="table table-borderless">
         <tr>
             <td><button (click) = "openLocationOne()">Location One</button></td>
 
@@ -16,12 +16,12 @@
 </div>
 
 <div *ngIf = "showTreasureMap">
-    <table>
+    <table class="table table-borderless">
         <tr>
             <td><img src = "{{treasureLocation}}"></td>
             <td>{{currentHint}}</td>
         </tr>
-        <tr><button (click) = "treasureBoxFound()">Found Treasure Box !!!</button></tr>
+        <tr><td><button class="btn " (click) = "treasureBoxFound()">Found Treasure Box !!!</button></td></tr>
 
     </table>
 
