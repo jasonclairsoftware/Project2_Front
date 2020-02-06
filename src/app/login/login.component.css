@@ -1,0 +1,20 @@
+footer{
+    margin: 20px;
+    margin-top: 110px;
+    background-color: chartreuse;
+    
+}
+
+.jumbotron{
+    background-color: burlywood;
+}
+.container{
+    background-color: aqua;
+    text-align: center;
+    
+}
+.form-control{
+    display: inline;
+    
+    width: 200px;
+}

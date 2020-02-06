@@ -6,17 +6,25 @@
         <div class="row">
             <div >
                 <h1 class="display-4">GEO EPIC</h1>
-                <p class="lead">Find Items,  Gain Revature Points</p>
+                <p class="lead">Find Poke Items,  Gain Revature Points</p>
                 <hr class="my-4">
-                <p>Exchange items</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                
             </div>
             <div class="col-sm-12">
-                <h1>GEO EPIC</h1>
-                <div *ngIf = "loginSuccessful == false">
-                    <div>
-                        Username<input type="text" [(ngModel)] = "usernm">
+                
+                <div class="container" *ngIf = "loginSuccessful == false">
+                    
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend"></div>
+                        Username<input class="form-control" type="text" [(ngModel)] = "usernm">
                     </div>
+                    
                     <div>
                         Password<input type="password" [(ngModel)] = "userpassword">
                     </div>
@@ -25,13 +33,14 @@
                 
                     </div>
                     
-                    <button (click) = "submit()">Submit</button>
+                    <button class="btn btn-primary btn-lg" (click) = "submit()">Submit</button>
                 
                 
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
 
 
@@ -50,3 +59,7 @@
 
 
 </div>
+
+<footer>
+    <p>&copy; BitByte Inc.</p>
+</footer>
