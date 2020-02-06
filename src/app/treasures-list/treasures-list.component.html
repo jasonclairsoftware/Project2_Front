@@ -1,0 +1,21 @@
+
+
+<button (click) = "revealTreasureInventory()">Reveal Treasure Inventory</button>
+
+<div *ngIf = "showTreasures">
+<h3>Treasures in box {{locationNumber}}:</h3>
+<ul>
+    <li *ngFor = "let treasure of treasures">
+        {{treasure}}
+        <button (click) = "swapTreasure()">SWAP Treasure</button>
+    </li>
+
+
+</ul>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+
+
+<div *ngIf = "showLocationMenu">
+    <table>
+        <tr>
+            <td><button (click) = "openLocationOne()">Location One</button></td>
+
+            <td><button (click) = "openLocationTwo()">Location Two</button></td>
+
+            <td><button (click) = "openLocationThree()">Location Three</button></td>
+
+            <td><button (click) = "openLocationFour()">Location Four</button></td>
+        </tr>
+    </table>
+
+</div>
+
+<div *ngIf = "showTreasureMap">
+    <table>
+        <tr>
+            <td><img src = "{{treasureLocation}}"></td>
+            <td>{{currentHint}}</td>
+        </tr>
+        <tr><button (click) = "treasureBoxFound()">Found Treasure Box !!!</button></tr>
+
+    </table>
+
+    
+    
+</div>
+
+<div *ngIf = "showTreasuresList">
+
+    
+    <app-treasures-list
+        [locationNumber] = "locationNumber" 
+    >
+
+    </app-treasures-list>
+
+
+</div>

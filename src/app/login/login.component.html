@@ -1,0 +1,28 @@
+
+<div *ngIf = "loginSuccessful == false">
+
+    Username<input type="text" [(ngModel)] = "usernm">
+    Password<input type="password" [(ngModel)] = "userpassword">
+    Is manager?(TRUE/FALSE)<input type="text" [(ngModel)] = "infoManager">
+
+    <button (click) = "submit()">Submit</button>
+
+
+</div>
+
+
+<div *ngIf = "showLogout">
+<button (click) = "doLogout()">Logout</button>
+
+</div>
+
+
+<div *ngIf = "loginSuccessful">
+
+    <app-location-picker
+        [currentUser] = "currentUser">
+
+    </app-location-picker>
+
+
+</div>
