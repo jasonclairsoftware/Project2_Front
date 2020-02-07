@@ -1,7 +1,8 @@
 footer{
-    margin: 20px;
+    margin-left: 20px;
     margin-top: 110px;
-    background-color: chartreuse;
+    padding-bottom: 10px;
+    /* background-color: chartreuse; */
     
 }
 
@@ -27,4 +28,8 @@ footer{
 
 #longer{
     width: 300px
+}
+
+body{
+    background-color: chartreuse;
 }
