@@ -14,24 +14,29 @@
                 
                 <div class="container" *ngIf = "loginSuccessful == false">
                     
-                    <div class="input-group mb-3">
+                    <h2>Start Exploring</h2>
+                    <div class="input-group input-group-sm mb-3">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">@</span>
+                            <p class="input-group-text" id="basic-addon1">Username</p>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend"></div>
-                        Username<input class="form-control" type="text" [(ngModel)] = "usernm">
+                        <input class="form-control" type="text" [(ngModel)] = "usernm">
+                        
                     </div>
-                    
-                    <div>
-                        Password<input type="password" [(ngModel)] = "userpassword">
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <p class="input-group-text" id="basic-addon1">Password</p>
+                        </div>
+                        <input  class="form-control" type="password" [(ngModel)] = "userpassword">
+                        
                     </div>
-                    <div>
-                        Is manager?(TRUE/FALSE)<input type="text" [(ngModel)] = "infoManager">
-                
+                    <div id="longer" class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <p class="input-group-text" id="basic-addon1">Is manager?(TRUE/FALSE)</p>
+                        </div>
+                        <input class="form-control" type="text" [(ngModel)] = "infoManager">
+                        
                     </div>
+                   
                     
                     <button class="btn btn-primary btn-lg" (click) = "submit()">Submit</button>
                 

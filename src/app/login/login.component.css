@@ -5,6 +5,7 @@ footer{
     
 }
 
+
 .jumbotron{
     background-color: burlywood;
 }
@@ -14,7 +15,16 @@ footer{
     
 }
 .form-control{
-    display: inline;
+    /* display: inline; */
+    /* width: 500px; */
+    
+}
+.input-group{
+    margin-left: 430px;
     
     width: 200px;
+}
+
+#longer{
+    width: 300px
 }
