@@ -1,9 +1,12 @@
 footer{
     margin-left: 20px;
-    margin-top: 110px;
-    padding-bottom: 10px;
-    /* background-color: chartreuse; */
-    
+    margin-top: 40px;
+    padding-bottom: 1px;
+
+}
+
+body{
+    background-color: chartreuse;
 }
 
 
@@ -30,6 +33,4 @@ footer{
     width: 300px
 }
 
-body{
-    background-color: chartreuse;
-}
+
