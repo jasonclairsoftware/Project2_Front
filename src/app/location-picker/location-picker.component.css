@@ -2,15 +2,6 @@ img{
     height: 300px;
     
 }
-/* footer{
-    margin-left: 20px;
-    margin-top: 100px;
-    padding-bottom: 1000px;
-
-} */
-
-/* .bgPic{
-    /* background-image: url(""); */
 
 
 .table{
@@ -19,4 +10,8 @@ img{
 }
 .jumbotron{
     width: 100%;
+}
+
+#box{
+   height: 100px;
 }
