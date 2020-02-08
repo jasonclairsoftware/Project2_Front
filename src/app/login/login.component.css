@@ -10,7 +10,7 @@ footer{
 } */
 
 .tiled{
-    background-image: url("../images/pokemon-go-wallpaper-pokeball-png.jpg");
+    /* background-image: url("/src/assests/images/pokemon-go-wallpaper-pokeball-png.jpg"); */
     background-size: 50px;
     background-repeat: repeat-x;
     height: 30px;
@@ -23,23 +23,25 @@ footer{
     text-align: center;
     
 }
-.form-control{
-    /* display: inline; */
-    /* width: 500px; */
-    
-}
+
 .input-group{
-    margin-left: 430px;
-    
-    width: 200px;
+    /* margin-left: 430px; */
+    /* text-align: center; */
+    /* width: 200px; */
 }
 
 .btn{
     background-color: blueviolet;
 }
 
+#check{
+    background-color: magenta;
+    text-align: center;
+    width: 300px;
+}
+
 #longer{
-    width: 300px
+    width: 270px
 }
 
 #right{

@@ -24,44 +24,52 @@
             </div>
             <div class="col-sm-12">
                 
-                <div class="container" *ngIf = "loginSuccessful == false">
-                   
-                    <h2>Start Exploring</h2>
-                    <div class="input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                            <p class="input-group-text" id="basic-addon1">Username</p>
-                        </div>
-                        <input class="form-control" type="text" [(ngModel)] = "usernm">
-                        
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                            <p class="input-group-text" id="basic-addon1">Password</p>
-                        </div>
-                        <input  class="form-control" type="password" [(ngModel)] = "userpassword">
-                        
-                    </div>
-                    <div id="longer" class="input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                            <p class="input-group-text" id="basic-addon1">Is manager?(TRUE/FALSE)</p>
-                        </div>
-                        <input class="form-control" type="text" [(ngModel)] = "infoManager">
-                        
-                    </div>
-                   
+                <div id="check" class="container" *ngIf = "loginSuccessful == false">
+                   <div class="row">
+                       <div class="col-sm-12">
+                        <h2>Start Exploring</h2>
                     
-                    <button class="btn btn-primary" (click) = "submit()">Submit</button>
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <p class="input-group-text" id="basic-addon1">Username</p>
+                            </div>
+                            <input class="form-control" type="text" [(ngModel)] = "usernm">
+                            
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <p class="input-group-text" id="basic-addon1">Password</p>
+                            </div>
+                            <input  class="form-control" type="password" [(ngModel)] = "userpassword">
+                            
+                        </div>
+                        <div id="longer" class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <p class="input-group-text" id="basic-addon1">Is manager?(TRUE/FALSE)</p>
+                            </div>
+                            <input class="form-control" type="text" [(ngModel)] = "infoManager">
+                            
+                        </div>
+                       
+                        
+                        <button class="btn btn-primary" (click) = "submit()">Submit</button>
+                       </div>
+                   </div>
+                 
                 
                 
                 </div>
-                <img src="assets/images/FemaleExplore.png" height="300px">
-
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="assets/images/FemaleExplore.png" height="300px">
+        
+                    </div>
+                </div>
             </div>
             
+            
         </div>
-        <div class="row">
-
-        </div>
+        
     </div>
     
 </div>
