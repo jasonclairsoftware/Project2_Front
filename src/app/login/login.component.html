@@ -1,20 +1,31 @@
+<html>
 <head>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
 </head>
 <body>
 <div class="jumbotron jumbotron-fluid">
     <div class="container container-fluid">
         <div class="row">
-            <div >
-                <h1 class="display-4">GEO EPIC</h1>
-                <p class="lead">Find Poke Items,  Gain Revature Points</p>
-                <hr class="my-4">
-                
+            <div class="col-sm-4">
+                <div >
+                    <h1 class="display-4">GEO EPIC</h1>
+                    <p class="lead">Find Poke Items,  Gain Revature Points</p>
+                    <hr class="my-4">
+                    
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div *ngIf = "showLogout">
+                    <button id="right" class="btn btn-primary" (click) = "doLogout()">Logout</button>
+                    
+                    </div>
             </div>
             <div class="col-sm-12">
                 
                 <div class="container" *ngIf = "loginSuccessful == false">
-                    
+                   
                     <h2>Start Exploring</h2>
                     <div class="input-group input-group-sm mb-3">
                         <div class="input-group-prepend">
@@ -39,21 +50,21 @@
                     </div>
                    
                     
-                    <button class="btn btn-primary btn-lg" (click) = "submit()">Submit</button>
+                    <button class="btn btn-primary" (click) = "submit()">Submit</button>
                 
                 
                 </div>
             </div>
+        </div>
+        <div class="row">
+           
         </div>
     </div>
     
 </div>
 
 
-<div *ngIf = "showLogout">
-<button (click) = "doLogout()">Logout</button>
 
-</div>
 
 
 <div *ngIf = "loginSuccessful">
@@ -65,8 +76,13 @@
 
 
 </div>
-
-<footer>
+<footer >
+    <img src="images/FemaleExplore.png">
     <p>&copy; BitByte Inc.</p>
 </footer>
+<div class="tiled">
+    
+</div>
+
 </body>
+</html>

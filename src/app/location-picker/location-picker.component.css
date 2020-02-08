@@ -15,6 +15,7 @@ img{
 
 .table{
     background-color: royalblue;
+    /* padding-right: -10px; */
 }
 .jumbotron{
     width: 100%;
