@@ -39,9 +39,9 @@ export class LocationPickerComponent implements OnInit {
 
     this.treasureLocation=`https://maps.googleapis.com/maps/api/staticmap?center=39.631979,-79.953752
     &zoom=18
-    &size=640x480
+    &size=800x600
+    &scale=2
     &maptype=hybrid
-    &markers=color:blue%7Clabel:T%7C39.631979,-79.953752
     &key=AIzaSyCucQ06qPPCTCDsw7SMCAAVGNWA7WdnHwk`;
     this.showTreasureMap = true;
     this.locationNumber = 1;
@@ -54,7 +54,7 @@ export class LocationPickerComponent implements OnInit {
 
     this.treasureLocation=`https://maps.googleapis.com/maps/api/staticmap?center=39.633532,-79.954227
     &zoom=18
-    &size=640x480
+    &size=800x600
     &maptype=hybrid
     &markers=color:blue%7Clabel:T%7C39.633532,-79.954227
     &key=AIzaSyCucQ06qPPCTCDsw7SMCAAVGNWA7WdnHwk`;
@@ -69,7 +69,7 @@ export class LocationPickerComponent implements OnInit {
 
     this.treasureLocation=`https://maps.googleapis.com/maps/api/staticmap?center=39.631766,-79.954436
     &zoom=18
-    &size=640x480
+    &size=800x600
     &maptype=hybrid
     &markers=color:blue%7Clabel:T%7C39.631766,-79.954436
     &key=AIzaSyCucQ06qPPCTCDsw7SMCAAVGNWA7WdnHwk`;
@@ -84,7 +84,7 @@ export class LocationPickerComponent implements OnInit {
 
     this.treasureLocation=`https://maps.googleapis.com/maps/api/staticmap?center=39.630871,-79.954766
     &zoom=18
-    &size=640x480
+    &size=800x600
     &maptype=hybrid
     &markers=color:blue%7Clabel:T%7C39.630871,-79.954766
     &key=AIzaSyCucQ06qPPCTCDsw7SMCAAVGNWA7WdnHwk`;
@@ -98,6 +98,10 @@ export class LocationPickerComponent implements OnInit {
     this.showTreasureMap = false;
     this.showTreasuresList = true;
 
+  }
+
+  editLocationCoordinates(){
+    // code here later
 
   }
 }
