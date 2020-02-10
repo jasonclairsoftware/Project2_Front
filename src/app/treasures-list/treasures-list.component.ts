@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { User } from '../Models/User';
 
 @Component({
   selector: 'app-treasures-list',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TreasuresListComponent implements OnInit {
 
   @Input() locationNumber:number;
-  // @Input() currentUser:User;
+  @Input() currentUser:User;
 
   treasures:Array<string> = [];
   showTreasures:boolean = false;
@@ -50,10 +51,20 @@ export class TreasuresListComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log("In treasures-List component");
+    console.log(this.currentUser);
   }
 
   swapTreasure(){
     // Put code here later
+  }
+
+  addTreasure(){
+    //put code here
+  }
+
+  removeTreasure(){
+    //put code here
   }
 
 }

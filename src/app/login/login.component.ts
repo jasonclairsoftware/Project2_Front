@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   usernm:string;
   userpassword:string;
   infoManager:string;
-  // isManager:boolean;
+  isManager:boolean;
   loginSuccessful:boolean = false;
   currentUser:User;
   showLogout:boolean = false;
@@ -25,10 +25,15 @@ export class LoginComponent implements OnInit {
   }
 
   submit(){
-    this.currentUser = new User(0,this.usernm,this.userpassword,Boolean(this.infoManager));
+    if (this.infoManager.toLowerCase() == 'true'){
+      this.isManager = true;
+    }else{
+      this.isManager = false;
+    }
+
+    this.currentUser = new User(0,this.usernm,this.userpassword,this.isManager);
 
     console.log(this.currentUser);
-
 
 
     this.loginSuccessful = true;
