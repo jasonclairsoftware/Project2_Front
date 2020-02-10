@@ -1,29 +1,75 @@
+<html>
+    
+<div class="contianer container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            
+            <div *ngIf = "showLocationMenu">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><button class="btn btn-primary"(click) = "openLocationOne()">Location One</button></td>
+            
+                        <td><button class="btn btn-primary"(click) = "openLocationTwo()">Location Two</button></td>
+            
+                        <td><button class="btn btn-primary"(click) = "openLocationThree()">Location Three</button></td>
+            
+                        <td><button class="btn btn-primary"(click) = "openLocationFour()">Location Four</button></td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
 
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div *ngIf = "showTreasureMap">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><img src = "{{treasureLocation}}"></td>
+                        <td>{{currentHint}}</td>
+                    </tr>
+                    <!-- <tr><td><button id=box class="btn" (click) = "treasureBoxFound()">Found Treasure Box !!!</button></td></tr> -->
+                    <tr>
+                        <td><img id="box" src="assets/images/pokebox2.png"(click) = "treasureBoxFound()" ></td>
+                        <td *ngIf = "currentUser.is_Manager">
+                            <button (click) = "editLocationCoordinates()">Edit Location Coordinates</button>
+                        </td>
+             
+                    </tr>
+                </table>
+            
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div *ngIf = "showTreasuresList">
 
-<div *ngIf = "showLocationMenu">
-    <table class="table table-borderless">
-        <tr>
-            <td><button class="btn btn-primary"(click) = "openLocationOne()">Location One</button></td>
-
-            <td><button class="btn btn-primary"(click) = "openLocationTwo()">Location Two</button></td>
-
-            <td><button class="btn btn-primary"(click) = "openLocationThree()">Location Three</button></td>
-
-            <td><button class="btn btn-primary"(click) = "openLocationFour()">Location Four</button></td>
-        </tr>
-    </table>
-
+    
+                <app-treasures-list
+                    [locationNumber] = "locationNumber" [currentUser] = "currentUser" >
+            
+                </app-treasures-list>
+            
+            
+            </div>
+        </div>
+    </div>
 </div>
 
 
-<div *ngIf = "showTreasureMap">
+
+<!-- <div *ngIf = "showTreasureMap">
     <table class="table table-borderless">
         <tr>
             <td><img src = "{{treasureLocation}}"></td>
             <td>{{currentHint}}</td>
-        </tr>
+        </tr> -->
         <!-- <tr><td><button id=box class="btn" (click) = "treasureBoxFound()">Found Treasure Box !!!</button></td></tr> -->
-        <tr>
+        <!-- <tr>
             <td><img id="box" src="assets/images/pokebox2.png"(click) = "treasureBoxFound()" ></td>
             <td *ngIf = "currentUser.is_Manager">
                 <button (click) = "editLocationCoordinates()">Edit Location Coordinates</button>
@@ -34,15 +80,8 @@
 
     
     
-</div>
-
-<div *ngIf = "showTreasuresList">
-
-    
-    <app-treasures-list
-        [locationNumber] = "locationNumber" [currentUser] = "currentUser" >
-
-    </app-treasures-list>
+</div> -->
 
 
-</div>
+
+</html>
