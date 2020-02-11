@@ -19,32 +19,35 @@ footer{
     background-color: burlywood;
 }
 .container{
-    background-color: aqua;
+    /* background-color: aqua; */
     text-align: center;
     
 }
 
-.input-group{
-    /* margin-left: 430px; */
-    /* text-align: center; */
-    /* width: 200px; */
+.input-group-text{
+    background-color: bisque;
+    color: slategray;
 }
 
 .btn{
-    background-color: blueviolet;
+    background-color: bisque;
+    color: slategray;
 }
 
 #check{
-    background-color: magenta;
     text-align: center;
-    width: 300px;
+    margin-left: 25px;
 }
 
-#longer{
-    width: 270px
+#backdrop{
+    background-image: url("src/assets/images/forest.png");
+    background-size: cover;
 }
 
 #right{
     margin-right: -200px;
 }
 
+.low{
+    margin-top: 70px;
+}
