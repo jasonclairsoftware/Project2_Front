@@ -3,17 +3,19 @@ img{
     
 }
 
-
+#box{
+    height: 100px;
+ }
 .table{
-    background-color: royalblue;
+    /* background-color: royalblue; */
     /* padding-right: -10px; */
 }
 .jumbotron{
     width: 100%;
 }
 
-#box{
-   height: 100px;
+#boop{
+    background-image: none;
 }
 
 .btn{
