@@ -13,7 +13,14 @@
                     <h1 class="display-4">GEO EPIC</h1>
                     <p class="lead">Find Poke Items,  Gain Revature Points</p>
                     <hr class="my-4">
-
+                    <!-- <nav class="navbar navbar-light bg-light"> -->
+                        <!-- <form class="form-inline"> -->
+                            <div *ngIf = "showLogout">
+                                <button  class="btn btn-sm btn-primary" (click) = "doLogout()">Logout</button>
+                                
+                                </div>
+                        <!-- </form> -->
+                      <!-- </nav> -->
                 </div>
             </div>
         </div>
@@ -67,13 +74,6 @@
     
 </div>
 
-
-<div class="col-sm-2">
-                <div *ngIf = "showLogout">
-                    <button id="right" class="btn btn-primary" (click) = "doLogout()">Logout</button>
-                    
-                    </div>
-            </div>
 
 
 <div *ngIf = "loginSuccessful">

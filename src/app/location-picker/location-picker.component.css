@@ -7,7 +7,8 @@ img{
     height: 100px;
  }
 .table{
-    /* background-color: royalblue; */
+    background-color: lightgreen;
+    border-radius: 10px;
     /* padding-right: -10px; */
 }
 .jumbotron{
@@ -19,8 +20,9 @@ img{
 }
 
 .btn{
-    
+    background-color: bisque;
     margin: 10px 60px;
+    color: slategray;
 }
 
 .nav-item{
