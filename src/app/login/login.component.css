@@ -1,6 +1,6 @@
 footer{
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-bottom: 1px;
     color: blue;
     
@@ -19,7 +19,7 @@ footer{
 }
 .container{
     /* background-color: aqua; */
-    margin-top: -20px;
+    /* margin-top: -20px; */
     text-align: center;
     
 }

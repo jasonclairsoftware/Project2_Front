@@ -1,7 +1,14 @@
-img{
-    height: 300px;
-    
+.rotom{
+    position: absolute;
+
+    z-index: 1;
 }
+
+.map{
+    position: absolute;
+    z-index: 3;
+}
+
 
 #box{
     height: 100px;

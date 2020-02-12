@@ -24,21 +24,25 @@
     <div class="row">
         <div class="col-sm-12">
             <div *ngIf = "showTreasureMap">
-                <table class="table table-borderless">
-                    <tr>
-                        <td><img src = "{{treasureLocation}}"></td>
-                        <td><iframe width="800" height="600" frameBorder="0" [src]="urlSafe"></iframe></td>
-                        <td>{{currentHint}}</td>
-                    </tr>
-                    <!-- <tr><td><button id=box class="btn" (click) = "treasureBoxFound()">Found Treasure Box !!!</button></td></tr> -->
-                    <tr>
-                        <td><img id="box" src="assets/images/pokebox2.png"(click) = "treasureBoxFound()" ></td>
-                        <td *ngIf = "currentUser.is_Manager">
+                <!-- <table class="table table-borderless">
+                    <tr> -->
+                        {{currentHint}}
+                        <img id="box" src="assets/images/pokebox2.png"(click) = "treasureBoxFound()" >
+                        <img class="map" src = "{{treasureLocation}}" >
+                        <iframe class = "map"width="400" height="300" frameBorder="0" [src]="urlSafe"></iframe>
+                        
+                        <img class = "rotom"src="assets/images/rotom2.png">
+                    <!-- </tr>
+                    <tr><td><button id=box class="btn" (click) = "treasureBoxFound()">Found Treasure Box !!!</button></td></tr> -->
+                    <!-- <tr> -->
+                        
+                         <div *ngIf = "currentUser.is_Manager">
                             <button (click) = "editLocationCoordinates()">Edit Location Coordinates</button>
-                        </td>
-             
+                         </div>
+                            <!-- </td>
+                            
                     </tr>
-                </table>
+                </table> -->
             
                 
                 
