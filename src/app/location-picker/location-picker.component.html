@@ -22,31 +22,22 @@
 
     </div>
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <div *ngIf = "showTreasureMap">
-                <!-- <table class="table table-borderless">
-                    <tr> -->
-                        {{currentHint}}
-                        <img id="box" src="assets/images/pokebox2.png"(click) = "treasureBoxFound()" >
+                
                         <img class="map" src = "{{treasureLocation}}" >
                         <iframe class = "map"width="400" height="300" frameBorder="0" [src]="urlSafe"></iframe>
                         
-                        <img class = "rotom"src="assets/images/rotom2.png">
-                    <!-- </tr>
-                    <tr><td><button id=box class="btn" (click) = "treasureBoxFound()">Found Treasure Box !!!</button></td></tr> -->
-                    <!-- <tr> -->
-                        
-                         <div *ngIf = "currentUser.is_Manager">
-                            <button (click) = "editLocationCoordinates()">Edit Location Coordinates</button>
-                         </div>
-                            <!-- </td>
-                            
-                    </tr>
-                </table> -->
-            
-                
-                
+                        <img class = "rotom"src="assets/images/rotom2.png" height="500px">
+                    
             </div>
+        </div>
+        <div class="col-sm-6 block"  *ngIf = "showTreasureMap">
+            <h3>{{currentHint}}</h3>
+            <img src="assets/images/pokebox2.png" height="100px" (click) = "treasureBoxFound()" >
+            <div *ngIf = "currentUser.is_Manager">
+                <button class="btn btn-primary"(click) = "editLocationCoordinates()">Edit Location Coordinates</button>
+             </div>
         </div>
     </div>
     <div class="row">

@@ -9,6 +9,10 @@
     z-index: 3;
 }
 
+.block{
+    text-align: center;
+}
+
 
 #box{
     height: 100px;
