@@ -7,6 +7,8 @@
 .map{
     position: absolute;
     z-index: 3;
+    top: 370px;
+    left:200px;
 }
 
 .block{
